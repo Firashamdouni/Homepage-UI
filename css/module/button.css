@@ -1,0 +1,66 @@
+.btn {
+  padding: 20px 60px 25px 95px;
+  margin-left: 25px;
+  background-color: #3D37F1;
+  color: #FFFFFF;
+  font-family: 'Poppins', sans-serif;
+  font-size: 23px;
+  line-height: 40px;
+  border-radius: 50px;
+}
+.btn-login {
+  margin-bottom: 380px;
+  position: relative;
+  box-shadow: 0 5px 2px #3d37f1;
+}
+.btn-login:hover {
+  background-color: transparent;
+  border: 2px solid #FFFFFF;
+  color: #3D37F1;
+  box-shadow: 5px 10px 10px #3d37f1;
+}
+.btn-login::before {
+  content: " ";
+  position: absolute;
+  left: 50px;
+  top: calc(50% - 17px);
+  height: 31px;
+  width: 31px;
+  background: url('../../image/waving-hand.png') center no-repeat;
+  background-size: cover;
+}
+.btn-login::before:hover {
+  background: url('../../image/waving-hand.svg') center no-repeat;
+}
+.btn-read_more {
+  padding: 15px 30px;
+  margin-top: 25px;
+  display: inline-block;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  color: #FFFFFF;
+  background-color: transparent;
+  border: 2px solid #FFFFFF;
+  border-radius: 50px;
+  text-align: center;
+  transition: 0.3s;
+}
+.btn-read_more:hover {
+  color: #4B647E;
+  background-color: #FFFFFF;
+}
+.btn-read_more:hover .card {
+  opacity: 1;
+}
+.link {
+  margin-top: 30px;
+  display: inline-block;
+  height: 26px;
+  width: 34px;
+  background: url(/image/Arrow-blog.png) left no-repeat;
+  background-size: cover;
+  transition: 0.3s;
+}
+.link:hover {
+  background-position-x: right;
+}

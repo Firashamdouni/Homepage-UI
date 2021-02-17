@@ -1,0 +1,35 @@
+@import "../variables.less";
+@import "../tools/mixins.less";
+.icone {
+    padding: 20px;
+    height: 58px;
+    width: 58px;
+    border-radius: 50%;
+    text-align: center;
+    
+    p {
+      color: #fff;
+    }
+}
+.primary-icone {
+    background-color: @btn-color;
+}
+.secondary-icone {
+  background-color:#9997DF;
+}
+.warnning-icone {
+  background-color: #FFBA3F;
+}
+
+.icone-social {
+  height: 43px;
+  width: 43px;
+  background-color: #0A315A;
+  position: relative;
+    img {
+      .center-elment();
+  }
+  .big-img {
+    transform: translate(-45%, -50%);
+  }
+}

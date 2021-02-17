@@ -1,0 +1,52 @@
+@import "../variables.less";
+@import "../tools/mixins.less";
+
+.header {
+  color: @basic-color;
+  padding-top: 85px;
+.menu {
+    font-family: @lato;
+    font-weight: 700;
+    font-size: 20px;
+    padding-top: 15px;
+    display: flex;
+    .menu-item {
+      padding: 12px;
+      margin: 0 25px;
+      &:last-child {
+        background-color: @header-link-color;
+        border-radius: 36px;
+        color: @white-color;
+        text-decoration: none;
+        white-space: nowrap;
+        padding: 24px 72px;
+        transition: .3s;
+        margin-top: -12px;    
+        .box-shadow(0,5px,2px,#ff8923);  
+        &:hover {
+          .box-shadow(0,5px,10px,#ff8923);
+        }
+      }
+      }
+  }
+  .header--logo {
+    display: block;
+    padding-top: 15px;
+  }
+  .header--body {
+    padding-top: 280px;
+    &::before  {
+      content: ' ';
+      position: absolute;
+      right: 700;
+      top: 800;
+    }
+      p {
+        font-family: @Roboto;
+        font-size: 22px;
+        line-height: 32px;
+        color: @title-color;
+        margin-bottom: 65px;
+      }
+  }
+}

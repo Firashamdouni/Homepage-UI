@@ -1,0 +1,132 @@
+@import "../variables.less";
+@import "../tools/mixins.less";
+
+.card-service {
+  margin-bottom: 60px;
+  font-size: 16px;
+  text-align: center;
+  color: @white-color;
+  .box-shadow(0,40px,40px,rgba(197, 195, 249, 0.15));
+  background-image: linear-gradient(to bottom , #FBBA77 , #DFA871);
+  .card-img__wrapper{
+    margin: 60px auto 0;
+    min-height: 115px;
+    width: 115px;
+    background: url("../../image/001-data.png") center center no-repeat;
+    background-size: cover;
+  }
+  .bg-1 {
+    background: url("../../image/003-paint.png") center center no-repeat;
+  }
+  .bg-2 {
+    background: url("../../image/Tracé\ 1595.png") center center no-repeat;
+  }
+  h3 {
+    padding:  60px 0 15px 0;
+    font-family: @lato;
+    font-size: 22px;
+  }
+  p {
+    color: @white-color;
+    font-family: @Roboto;
+    font-size: 16px;
+    line-height: 26px;
+  }
+}
+
+.card-second {
+  background-image: linear-gradient(to bottom , #41EAE3 , #2293B7);
+}
+
+.card-third {
+  background-image: linear-gradient(to bottom , #69529F , #463864);
+}
+
+.card-result {
+  padding: 70px 70px 30px;
+
+    border-radius: 45px;
+    .box-shadow(0,4px,4px,#C5C3F9);
+    .card-number {
+     
+      padding: 75px 60px 65px 60px;
+      margin-bottom: 25px;
+      color: @white-color;
+      font-family: @lato;
+      font-weight: 900;
+      font-size: 38px;
+      border-radius: 45px;
+      background: linear-gradient(to right bottom,#AF94FD,#6651F3);
+      .box-shadow(0,4px,4px,#C5C3F9);
+    }
+    .card-number_pink {
+      background: linear-gradient(to right bottom,#FF95A5,#FF62A3);
+    }
+    .card-number_orange {
+      background: linear-gradient(to right bottom,#FBC9A4,#FF884A);
+    }
+}
+
+.work-card {
+  padding: 80px 100px 100px 75px;
+  background: url(.././../image/design-bg.png) center  no-repeat ;
+  text-align: left;
+  .card-img__wrapper {
+    margin: 0;
+  }
+  .card-text {
+    font-weight: 300;
+    font-size: 26px;
+    line-height: 26px;
+    color: rgba(255, 255, 255, .7);
+  }
+}
+.sketch-bg {
+  background: url(.././../image/sketch.png) center  no-repeat ;
+}
+
+/* .bg-2 {
+  background : url(../../image/sketch.png) center no-repeat;
+  background-size: cover; 
+}
+.bg-3 {
+  background : url(../../image/sketch.png) center no-repeat;
+  background-size: cover; 
+} */
+
+.card-blog{
+  .card-body {
+    padding: 0 30px 30px 40px;
+  }
+  .box-shadow(0,40px,40px,rgba(197, 195, 249, 0.15));
+    #wave {
+      margin-top: -70px;
+      position: relative;
+      height: 70px;
+      width: 100%;
+      &::before {
+         position: absolute;
+         content: "";
+         height: 70px;
+         width: 100%;
+         left: 0;
+         top: 0;
+         background: url(/image/wave.svg) center no-repeat;
+         background-size: cover;
+       }
+    }
+    h3 {
+      font-size: 20px;
+      line-height: 26px;
+      font-family: @lato;
+      font-weight: bold;
+      color: #5A5454;
+    }
+    p {
+      font-size: 15px;
+      line-height: 25px;
+    }
+
+    }
+
+

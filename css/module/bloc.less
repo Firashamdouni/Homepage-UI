@@ -1,0 +1,36 @@
+@import "../variables.less";
+@import "../tools/mixins.less";
+.bloc {
+  width: 370px;
+  height: 417px;
+  border-radius: 5%;
+
+  .box-shadow(0,4px,4px,rgba(197,195,249,.15));
+  .bloc-content {
+    padding: 80px 40px 100px 70px;
+    text-align: left;
+    color: @white-color;
+    .bloc-img {
+      height: 75px;
+      width: 75px;
+    }
+    .img-1 {
+      background: url(../../image/design.png) left no-repeat;
+      background-size: cover;
+    }
+    .img-2 {
+      background: url(../../image/design.png) left no-repeat;
+      background-size: cover;
+    }
+  }
+}
+
+.bg-1 {
+  background : url(../../image/design-bg.png) center no-repeat;
+  background-size: contain; 
+}
+
+.bg-2 {
+  background : url(../../image/sketch.png) center no-repeat;
+  background-size: cover; 
+}

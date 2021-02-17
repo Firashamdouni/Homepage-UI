@@ -1,0 +1,40 @@
+.center-elment {
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+.icone {
+  padding: 20px;
+  height: 58px;
+  width: 58px;
+  border-radius: 50%;
+  text-align: center;
+}
+.icone p {
+  color: #fff;
+}
+.primary-icone {
+  background-color: #3D37F1;
+}
+.secondary-icone {
+  background-color: #9997DF;
+}
+.warnning-icone {
+  background-color: #FFBA3F;
+}
+.icone-social {
+  height: 43px;
+  width: 43px;
+  background-color: #0A315A;
+  position: relative;
+}
+.icone-social img {
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+.icone-social .big-img {
+  transform: translate(-45%, -50%);
+}
