@@ -70,3 +70,11 @@
 .link:hover {
   background-position-x: right;
 }
+@media screen and (max-width: 1024px) {
+  .hire .btn-login {
+    padding: 25px 40px 25px 95px  !important;
+  }
+  .hire .btn-login::before {
+    left: 35px;
+  }
+}

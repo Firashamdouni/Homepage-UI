@@ -51,19 +51,24 @@
         font-family: @Roboto;
         font-weight: 500;
         text-transform: capitalize;
+        
         .active {
-          position: relative;
+         
           color: #3D37F1;
-          &::before {
-            position: absolute;
-            content: " ";
-            height: 2px;
-            bottom: -10px;
-            left: 0;
-            background: #3D37F1;
-            width: 30%;
-            transition: .4s ease-out;
+          a {
+            position: relative;
+            &::before {
+              position: absolute;
+              content: " ";
+              height: 2px;
+              bottom: -10px;
+              left: 0;
+              background: #3D37F1;
+              width: 100%;
+              transition: .4s ease-out;
+            }
           }
+
 
         }
             .list-item {
@@ -97,7 +102,7 @@
   }
   .grid-item {
     height: 270px;
-    width: 370px;
+    max-width: 350px;
   }
     .gallery {
       height: 278px;
@@ -154,7 +159,7 @@
 }
 .hire {
   padding: 160px 140px;
-  height: 1320px;
+  min-height: 1320px;
 
   text-align: center;
   background:  url(../../image/about-us.png) center no-repeat;
@@ -356,3 +361,45 @@
     }
   }
 }
+
+@media screen and (max-width: 1024px) {
+  .img-wrapper {
+    display: none;
+  }
+  .about {
+    padding: 0;
+  }
+  .section-portfolio {
+    padding:  50px 0  50px;
+    text-align: center;
+  }
+.hire {
+  padding: 50px 0 ;
+
+}
+.workflow {
+  text-align: center;
+  img {
+    display: none;
+  }
+  .icone {
+    margin : 20px auto 0;
+  }
+}
+.footer {
+  text-align: center;
+   .title {
+      padding: 20px 0;
+  }
+  .copyright {
+    position: absolute;
+    bottom: 0;
+  }
+}
+.fotter_left-side .social-media {
+  justify-content: center;
+  padding: 30px 0 50px 0 !important;
+}
+  }
+
+  

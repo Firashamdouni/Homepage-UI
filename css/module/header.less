@@ -35,8 +35,8 @@
   }
   .header--body {
     padding-top: 280px;
-    background: url(/image/header-bg.png) center no-repeat;
-    background-size: cover;
+/*     background: url(/image/header-bg.png) center no-repeat;
+    background-size: cover; */
       p {
         font-family: @Roboto;
         font-size: 22px;
@@ -45,4 +45,18 @@
         margin-bottom: 65px;
       }
   }
+}
+
+@media screen and (max-width: 1024px) {
+
+.header {
+  text-align: center;
+  .menu {
+      display: flex;
+      flex-direction: column;
+      .menu-item {
+        margin: 10px 0;
+      }
+  }
+}
 }

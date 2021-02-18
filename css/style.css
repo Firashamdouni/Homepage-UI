@@ -108,8 +108,8 @@ hr::before {
 }
 .header .header--body {
   padding-top: 280px;
-  background: url(/image/header-bg.png) center no-repeat;
-  background-size: cover;
+  /*     background: url(/image/header-bg.png) center no-repeat;
+    background-size: cover; */
 }
 .header .header--body p {
   font-family: 'Roboto', sans-serif;
@@ -118,11 +118,35 @@ hr::before {
   color: #534D4D;
   margin-bottom: 65px;
 }
+@media screen and (max-width: 1024px) {
+  .header {
+    text-align: center;
+  }
+  .header .menu {
+    display: flex;
+    flex-direction: column;
+  }
+  .header .menu .menu-item {
+    margin: 10px 0;
+  }
+}
 .grid-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-column-gap: 30px;
   grid-row-gap: 40px;
+}
+@media screen and (max-width: 420px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-row-gap: 40px;
+  }
+}
+@media screen and (min-width: 540px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 .btn {
   padding: 20px 60px 25px 95px;
@@ -190,6 +214,14 @@ hr::before {
 .link:hover {
   background-position-x: right;
 }
+@media screen and (max-width: 1024px) {
+  .hire .btn-login {
+    padding: 25px 40px 25px 95px  !important;
+  }
+  .hire .btn-login::before {
+    left: 35px;
+  }
+}
 .section {
   position: relative;
   background-color: #FBFCFD;
@@ -241,17 +273,19 @@ hr::before {
   text-transform: capitalize;
 }
 .section-portfolio .side-navbar .list-items .active {
-  position: relative;
   color: #3D37F1;
 }
-.section-portfolio .side-navbar .list-items .active::before {
+.section-portfolio .side-navbar .list-items .active a {
+  position: relative;
+}
+.section-portfolio .side-navbar .list-items .active a::before {
   position: absolute;
   content: " ";
   height: 2px;
   bottom: -10px;
   left: 0;
   background: #3D37F1;
-  width: 30%;
+  width: 100%;
   transition: 0.4s ease-out;
 }
 .section-portfolio .side-navbar .list-items .list-item {
@@ -282,7 +316,7 @@ hr::before {
 }
 .section-portfolio .grid-item {
   height: 270px;
-  width: 370px;
+  max-width: 350px;
 }
 .section-portfolio .gallery {
   height: 278px;
@@ -337,7 +371,7 @@ hr::before {
 }
 .hire {
   padding: 160px 140px;
-  height: 1320px;
+  min-height: 1320px;
   text-align: center;
   background: url(../../image/about-us.png) center no-repeat;
   background-size: cover;
@@ -523,6 +557,44 @@ hr::before {
   background-size: cover;
   background: url(/image/Location.png) center no-repeat;
 }
+@media screen and (max-width: 1024px) {
+  .img-wrapper {
+    display: none;
+  }
+  .about {
+    padding: 0;
+  }
+  .section-portfolio {
+    padding: 50px 0  50px;
+    text-align: center;
+  }
+  .hire {
+    padding: 50px 0 ;
+  }
+  .workflow {
+    text-align: center;
+  }
+  .workflow img {
+    display: none;
+  }
+  .workflow .icone {
+    margin: 20px auto 0;
+  }
+  .footer {
+    text-align: center;
+  }
+  .footer .title {
+    padding: 20px 0;
+  }
+  .footer .copyright {
+    position: absolute;
+    bottom: 0;
+  }
+  .fotter_left-side .social-media {
+    justify-content: center;
+    padding: 30px 0 50px 0 !important;
+  }
+}
 .card-service {
   margin-bottom: 60px;
   font-size: 16px;
@@ -645,6 +717,24 @@ hr::before {
 .card-blog p {
   font-size: 15px;
   line-height: 25px;
+}
+@media screen and (max-width: 1024px) {
+  .work-card {
+    margin-bottom: 20px;
+  }
+  .card-blog {
+    margin-bottom: 20px;
+  }
+  .card-group {
+    margin: 0 auto;
+  }
+  .work-card {
+    padding: 25px;
+  }
+  .card-result .card-number {
+    font-size: 25px;
+    padding: 10px;
+  }
 }
 .center-elment {
   top: 50%;

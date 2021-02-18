@@ -49,17 +49,19 @@
   text-transform: capitalize;
 }
 .section-portfolio .side-navbar .list-items .active {
-  position: relative;
   color: #3D37F1;
 }
-.section-portfolio .side-navbar .list-items .active::before {
+.section-portfolio .side-navbar .list-items .active a {
+  position: relative;
+}
+.section-portfolio .side-navbar .list-items .active a::before {
   position: absolute;
   content: " ";
   height: 2px;
   bottom: -10px;
   left: 0;
   background: #3D37F1;
-  width: 30%;
+  width: 100%;
   transition: 0.4s ease-out;
 }
 .section-portfolio .side-navbar .list-items .list-item {
@@ -90,7 +92,7 @@
 }
 .section-portfolio .grid-item {
   height: 270px;
-  width: 370px;
+  max-width: 350px;
 }
 .section-portfolio .gallery {
   height: 278px;
@@ -145,7 +147,7 @@
 }
 .hire {
   padding: 160px 140px;
-  height: 1320px;
+  min-height: 1320px;
   text-align: center;
   background: url(../../image/about-us.png) center no-repeat;
   background-size: cover;
@@ -330,4 +332,42 @@
   top: 17px;
   background-size: cover;
   background: url(/image/Location.png) center no-repeat;
+}
+@media screen and (max-width: 1024px) {
+  .img-wrapper {
+    display: none;
+  }
+  .about {
+    padding: 0;
+  }
+  .section-portfolio {
+    padding: 50px 0  50px;
+    text-align: center;
+  }
+  .hire {
+    padding: 50px 0 ;
+  }
+  .workflow {
+    text-align: center;
+  }
+  .workflow img {
+    display: none;
+  }
+  .workflow .icone {
+    margin: 20px auto 0;
+  }
+  .footer {
+    text-align: center;
+  }
+  .footer .title {
+    padding: 20px 0;
+  }
+  .footer .copyright {
+    position: absolute;
+    bottom: 0;
+  }
+  .fotter_left-side .social-media {
+    justify-content: center;
+    padding: 30px 0 50px 0 !important;
+  }
 }

@@ -39,8 +39,8 @@
 }
 .header .header--body {
   padding-top: 280px;
-  background: url(/image/header-bg.png) center no-repeat;
-  background-size: cover;
+  /*     background: url(/image/header-bg.png) center no-repeat;
+    background-size: cover; */
 }
 .header .header--body p {
   font-family: 'Roboto', sans-serif;
@@ -48,4 +48,16 @@
   line-height: 32px;
   color: #534D4D;
   margin-bottom: 65px;
+}
+@media screen and (max-width: 1024px) {
+  .header {
+    text-align: center;
+  }
+  .header .menu {
+    display: flex;
+    flex-direction: column;
+  }
+  .header .menu .menu-item {
+    margin: 10px 0;
+  }
 }
