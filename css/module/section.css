@@ -7,8 +7,7 @@
   line-height: 22px;
 }
 .header {
-  /*   background: url(../../image/bg-header.png) right top no-repeat;
-  background-size: contain; */
+  position: relative;
 }
 .services .services--content {
   padding: 40px 0 70px 0;
@@ -57,7 +56,7 @@
   position: absolute;
   content: " ";
   height: 2px;
-  bottom: -2px;
+  bottom: -10px;
   left: 0;
   background: #3D37F1;
   width: 30%;
@@ -65,27 +64,33 @@
 }
 .section-portfolio .side-navbar .list-items .list-item {
   margin-bottom: 45px;
+}
+.section-portfolio .side-navbar .list-items .list-item a {
   position: relative;
 }
-.section-portfolio .side-navbar .list-items .list-item::after {
+.section-portfolio .side-navbar .list-items .list-item a::after {
   position: absolute;
   content: " ";
   height: 2px;
-  width: 0;
-  bottom: -2px;
+  bottom: -10px;
   left: 0;
-  background: transparent;
+  border-bottom: 2px solid transparent;
   transition: 0.4s ease-out;
+  width: 0;
 }
-.section-portfolio .side-navbar .list-items .list-item:hover {
+.section-portfolio .side-navbar .list-items .list-item a:hover {
   color: #3D37F1;
 }
-.section-portfolio .side-navbar .list-items .list-item:hover::after {
-  background: #3D37F1;
-  width: 30%;
+.section-portfolio .side-navbar .list-items .list-item a:hover::after {
+  width: 100%;
+  border-bottom: 2px solid #3D37F1;
 }
 .section-portfolio p {
   padding-top: 10px;
+}
+.section-portfolio .grid-item {
+  height: 270px;
+  width: 370px;
 }
 .section-portfolio .gallery {
   height: 278px;
@@ -96,15 +101,23 @@
   background-size: cover;
 }
 .section-portfolio .item-2 {
-  background: url(../../image/1.png) center no-repeat;
+  background: url(../../image/item-2.png) center no-repeat;
   background-size: cover;
 }
 .section-portfolio .item-3 {
-  background: url(../../image/1.png) center no-repeat;
+  background: url(../../image/item-3.png) center no-repeat;
   background-size: cover;
 }
 .section-portfolio .item-4 {
-  background: url(../../image/1.png) center no-repeat;
+  background: url(../../image/item-4.png) center no-repeat;
+  background-size: cover;
+}
+.section-portfolio .item-5 {
+  background: url(../../image/item-5.png) center no-repeat;
+  background-size: cover;
+}
+.section-portfolio .item-6 {
+  background: url(../../image/item-6.png) center no-repeat;
   background-size: cover;
 }
 .success {
@@ -211,6 +224,10 @@
   font-weight: 300;
   color: rgba(255, 255, 255, 0.7);
 }
+.work-section .design {
+  border-radius: 20px;
+  padding: 80px 100px 100px 70px;
+}
 .workflow {
   padding: 150px 0 120px 0 ;
 }
@@ -277,12 +294,15 @@
   left: 0;
   bottom: 0;
   border-bottom: 2px solid transparent;
-  transition: border-bottom width 0.5s;
+  transition: 0.5s ease-out;
   width: 0;
 }
 .footer .fotter_section a:hover::after {
   width: 100%;
   border-bottom: 2px solid #4B647E;
+}
+.footer .fotter_section a:hover {
+  opacity: 0.8;
 }
 .footer .contact .number-link {
   position: relative;

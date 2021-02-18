@@ -1,3 +1,9 @@
+.center-elment {
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
 .header {
   color: #747474;
   padding-top: 85px;
@@ -33,12 +39,8 @@
 }
 .header .header--body {
   padding-top: 280px;
-}
-.header .header--body::before {
-  content: ' ';
-  position: absolute;
-  right: 700;
-  top: 800;
+  background: url(/image/header-bg.png) center no-repeat;
+  background-size: cover;
 }
 .header .header--body p {
   font-family: 'Roboto', sans-serif;

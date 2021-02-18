@@ -8,8 +8,8 @@
   line-height: 22px;
 }
 .header {
-/*   background: url(../../image/bg-header.png) right top no-repeat;
-  background-size: contain; */
+  position: relative;
+
 }
 .services {
     .services--content {
@@ -58,7 +58,7 @@
             position: absolute;
             content: " ";
             height: 2px;
-            bottom: -2px;
+            bottom: -10px;
             left: 0;
             background: #3D37F1;
             width: 30%;
@@ -68,30 +68,36 @@
         }
             .list-item {
               margin-bottom: 45px;
-              position: relative;
+              a {
+                position: relative;
                 &::after {
                   position: absolute;
                   content: " ";
                   height: 2px;
-                  width: 0;
-                  bottom: -2px;
+                  bottom: -10px;
                   left: 0;
-                  background: transparent;
+                  border-bottom: 2px solid transparent;
                   transition: .4s ease-out;
+                  width: 0;
                 }
                 &:hover  {
                   color: #3D37F1;
                   &::after {
-                    background: #3D37F1;
-                    width: 30%;
+                    width: 100%;
+                    border-bottom: 2px solid #3D37F1;
+               
                   }
                 }
-
+              }
             }
       }
   }
   p {
     padding-top: 10px;
+  }
+  .grid-item {
+    height: 270px;
+    width: 370px;
   }
     .gallery {
       height: 278px;
@@ -102,15 +108,23 @@
       background-size: cover;
     }
     .item-2 {
-      background: url(../../image/1.png) center no-repeat;
+      background: url(../../image/item-2.png) center no-repeat;
       background-size: cover;
     }
     .item-3 {
-      background: url(../../image/1.png) center no-repeat;
+      background: url(../../image/item-3.png) center no-repeat;
       background-size: cover;
     }
     .item-4 {
-      background: url(../../image/1.png) center no-repeat;
+      background: url(../../image/item-4.png) center no-repeat;
+      background-size: cover;
+    }
+    .item-5 {
+      background: url(../../image/item-5.png) center no-repeat;
+      background-size: cover;
+    }
+    .item-6 {
+      background: url(../../image/item-6.png) center no-repeat;
       background-size: cover;
     }
 }
@@ -223,6 +237,11 @@
     font-weight: 300;
     color: rgba(255, 255, 255, .7);
   }
+  .design {
+    border-radius: 20px;
+    padding: 80px 100px 100px 70px;
+    
+  }
 }
 
 .workflow {
@@ -295,12 +314,15 @@
         left: 0;
         bottom: 0;
         border-bottom:  2px solid transparent;
-        transition: border-bottom width 0.5s;
+        transition: 0.5s ease-out;
         width: 0;
       }
       &:hover::after{
         width: 100%;
         border-bottom: 2px solid #4B647E;
+      }
+      &:hover {
+        opacity: .8;
       }
     }
   }
